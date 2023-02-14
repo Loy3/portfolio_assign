@@ -1,0 +1,492 @@
+body {
+    background-color: #f7f0d96c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Nav Bar*/
+nav {
+    margin: 0px 10px 0px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+nav td {
+    padding: 0;
+}
+
+nav a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #552f1a;
+    color: aliceblue;
+}
+
+nav a.active {
+    border-bottom: 2px solid #552f1a;
+}
+
+/*End of Nav Bar*/
+
+/*Header*/
+header {
+    background-image: url("../assets/Images/tv.png");
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+.bgText {
+    position: absolute;
+    color: white;
+}
+
+.bgBlock {
+    width: 100%;
+    padding: 40px;
+    background-color: #2b180e;
+    opacity: 0.7;
+
+    text-align: center;
+    height: 68%;
+}
+
+/*End of Header*/
+
+/*Main*/
+main {
+    margin-top: 50px;
+}
+
+#container {
+    margin: 50px;
+}
+
+main h1,
+main h3,
+main h2,
+main span,
+main h4 {
+    color: #552f1a;
+}
+
+main h1 {
+    border-bottom: 2px solid #552f1a;
+    width: 50px;
+    padding-bottom: 5px;
+}
+
+main span {
+    font-weight: bold;
+}
+
+/*Personal Info*/
+.detTb {
+    margin-top: 50px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 65%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+
+.column2 .column {
+    height: 60px;
+    float: left;
+    width: 46%;
+    padding: 0 10px;
+}
+
+.column2 .longColumn {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+
+}
+
+.detTb td {
+    padding: 10px;
+}
+
+.detTb a {
+    text-decoration: none;
+    color: black;
+}
+
+.detImg {
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+
+
+.hobb td {
+    width: 20%;
+}
+
+
+.hobb img {
+    width: 50px;
+    padding: 10px;
+}
+
+/* End of Personal Info*/
+
+/*Skills*/
+#design {
+    padding: 20px;
+}
+
+#skills {
+    margin: 0px 50px;
+}
+
+#skills .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+
+}
+
+#skills tr {
+    margin: 20px;
+}
+
+#skills td {
+    width: 20%;
+}
+
+#skill {
+    text-align: left;
+    padding: 10px;
+    background-color: #e2dcc77e;
+    box-shadow: 5px 10px 20px #552f1a71;
+    margin: 10px;
+}
+
+.mImg {
+    width: 50px;
+    padding: 10px;
+}
+
+.web img {
+    width: 25px;
+}
+
+#designs {
+    background-color: #9c5f3f1c;
+    padding: 20px;
+}
+
+.design td {
+    width: 20%;
+    padding: 10px;
+    background-color: #e2dcc733;
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+.design img,
+.design video {
+    width: 100%;
+
+}
+
+/*End of Skills*/
+
+/*Resume*/
+#resume table {
+    width: 100%;
+}
+
+#resume td:nth-child(1) {
+    width: 70%;
+    margin: 10px;
+}
+
+#resume td:nth-child(2) {
+    width: 30%;
+}
+
+
+#education .column {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+
+}
+
+
+#experience {
+    margin-top: 30px;
+}
+
+
+#experience .column {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+
+}
+
+#experience ul,
+.spec ul {
+    list-style: none;
+}
+
+#experience ul li::before,
+.spec ul li::before {
+    content: "\2022";
+    color: #552f1a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em;
+}
+
+#experience td {
+    padding-right: 20px;
+}
+
+#firstexp {
+    display: block;
+    padding: 20px;
+}
+
+#secondexp {
+    display: none;
+    padding: 20px;
+}
+
+#experience button {
+
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    background-color: #f7f0d9;
+    color: #552f1ad7;
+    border: 2px solid #552f1ad7;
+}
+
+#experience button:hover {
+    background-color: #552f1ad7;
+    color: #f7f0d9;
+    border: 2px solid #552f1ad7;
+}
+
+.sideImg {
+    display: block;
+    background-image: url("../assets/Images/utv.png");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 0px 10px 0px 10px;
+    object-fit: cover;
+
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+/*End of Resume*/
+
+/*Specialize*/
+#spec {
+    background-color: #9c5f3f1c;
+    padding: 15px;
+}
+
+#spec .column {
+    float: left;
+    width: 31%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+
+.spec {
+    text-align: left;
+    height: 260px;
+
+    padding: 10px;
+    background-color: #e2dcc77e;
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+.spec img {
+    width: 50px;
+    padding: 10px;
+}
+
+
+/*End of Specialize*/
+
+/*Designs*/
+#few .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 10px 20px #552f1a71;
+    background-color: #fcf4db;
+    padding: 10px;
+    margin: 8px;
+}
+
+#few img {
+    width: 100%;
+}
+
+#few button {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 130px;
+    height: 40px;
+    font-size: large;
+    background-color: #f7f0d9;
+    color: #552f1ad7;
+    border: 2px solid #552f1ad7;
+}
+
+#few button:hover {
+    background-color: #552f1ad7;
+    color: #f7f0d9;
+    border: 2px solid #552f1ad7;
+}
+
+/*end of Designs*/
+
+/*End of Main*/
+
+
+/*Footer*/
+footer {
+    background-color: #e2dcc7;
+    padding: 40px;
+    box-shadow: 5px 10px 20px #552f1a71;
+    text-align: center;
+    color: #552f1a;
+}
+
+footer a {
+    text-decoration: none;
+    outline: none;
+    padding: 5px;
+}
+
+.socials img {
+    width: 30px;
+}
+
+.socials img:hover {
+    width: 40px;
+}
+
+footer img {
+    width: 50px;
+    box-shadow: 5px 10px 20px #552f1a71;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10em;
+}
+
+footer img:hover {
+    width: 60px;
+}
+
+/*End of Footer*/
+
+/*Media*/
+@media screen and (max-width: 700px) {
+
+    .column1,
+    .column2,
+    .column2 .column,
+    #skills .column,
+    #education .column,
+    #experience .column,
+    #spec .column {
+        width: 100%;
+        float: none;
+    }
+
+    #few .column {
+        width: 95%;
+    }
+
+    #skills .column {
+        margin-top: 15px;
+    }
+
+    .spec img,
+    .mImg {
+        width: 90px;
+    }
+
+    .spec {
+        height: 350px;
+    }
+
+    .sideImg {
+        display: none;
+    }
+
+    #resume td:nth-child(1) {
+        width: 100%;
+    }
+
+    #resume td:nth-child(2) {
+        width: 0%;
+    }
+
+    #secondexp,
+    #firstexp {
+
+        padding: 0px;
+    }
+}

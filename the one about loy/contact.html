@@ -5,142 +5,7 @@
     <meta charset="utf-8">
     <title>the one about loy</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
-    <!--Styling-->
-    <style>
-        body {
-            background-color: #f7f0d96c;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        /*Nav Bar*/
-        nav {
-            margin: 0px 10px 0px 10px;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        nav td {
-            padding: 0;
-        }
-
-        nav a {
-            color: #000000;
-            padding: 10px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        nav a:hover {
-            background-color: #552f1a;
-            color: aliceblue;
-        }
-
-        nav a.active {
-            border-bottom: 2px solid #552f1a;
-        }
-
-        /*End of Nav Bar*/
-
-        /*Header*/
-        header {
-            background-image: url("./assets/Images/tv.png");
-            background-size: cover;
-            height: 40vh;
-            background-position: center;
-            background-attachment: fixed;
-            text-align: center;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0px 10px 0px 10px;
-
-            box-shadow: 5px 10px 20px #552f1a71;
-        }
-
-        .bgText {
-            position: absolute;
-            color: white;
-            width: 60%;
-        }
-
-        .bgText p {
-            font-size: 14px;
-        }
-
-        .bgBlock {
-            width: 100%;
-            padding: 40px;
-            background-color: #2b180e;
-            opacity: 0.7;
-
-            text-align: center;
-            height: 68%;
-        }
-
-        /*End of Header*/
-
-        /*Main*/
-        main {
-            margin: 50px;
-            margin-top: 50px;
-        }
-
-        main h1 {
-            color: #552f1a;
-        }
-
-
-        span,
-        h3 {
-            font-weight: bold;
-            font-size: 20px;
-            color: #552f1a;
-        }
-
-        .socials a {
-            text-decoration: none;
-            outline: none;
-            padding: 5px;
-        }
-
-        .socials img {
-            width: 25px;
-        }
-
-        .socials img:hover {
-            width: 30px;
-        }
-
-        /*End of Main*/
-
-        /*Footer*/
-        footer {
-            background-color: #e2dcc7;
-            padding: 10px;
-            text-align: center;
-            color: #552f1a;
-        }
-
-        footer img {
-            width: 50px;
-            box-shadow: 5px 10px 20px #552f1a71;
-            padding: 10px;
-            background-color: white;
-            border-radius: 10em;
-        }
-
-        footer img:hover {
-            width: 60px;
-        }
-
-        /*End of Footer*/
-
-    </style>
-    <!--/*Styling-->
-
+    <link rel="stylesheet" type="text/css" href="./styles/contact_style.css">
 </head>
 
 <body>
@@ -185,25 +50,30 @@
 
     <!--Main-->
     <main>
-        <table>
-            <tr>
-                <td style="width: 40%; padding-left: 50px;">
+
+        <div class="row">
+            <div class="column1">
+                <div class="card">
                     <span>location:</span>
                     <br>
                     block f
                     <br>
                     soshanguve, 0152
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <div class="card">
                     <span>email: </span>
                     <br>
                     netshiozwiloy@gmail.com
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <div class="card">
                     <span>phone Number: </span>
                     <br>
                     +27 68 128 7854 || +27 76 850 7586
-                    <br><br>
+                </div>
+                <br>
+                <div class="card">
                     <span>socials</span>
                     <br><br>
                     <div class="socials">
@@ -216,20 +86,81 @@
                         </a>
 
                     </div>
-                </td>
+                </div>
+            </div>
 
-                <td style="width: 60%;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20965.670353305482!2d28.08696673664114!3d-25.513968675215455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcf43441e6539%3A0x4e9266f675416d2c!2sSoshanguve%20-%20F%2C%20Soshanguve%2C%200152!5e0!3m2!1sen!2sza!4v1675452961173!5m2!1sen!2sza"
-                        width="100%" height="370" style="border:0; border-radius: 1em;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="column2">
+                <div id="formBG">
+                    <h2>send a message:</h2>
 
-                    <p style="font-style: italic; font-size: 12px; padding: 10px;">
-                        a map view of my town.
+
+                    <table style="border-spacing: 15px; margin-top: 20px;">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="name" required>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="surname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="email" placeholder="email address" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea name="" id="" rows="10" placeholder="message" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="openForm()">
+                                    submit
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Popup-->
+        <div id="popup">
+            <div class="mypopup" onclick="closeForm()">
+                <div class="box">
+                    <h2>message</h2>
+
+                    <p>
+                        message was sent successfully!
                     </p>
-                </td>
-            </tr>
-        </table>
+                    <br>
+
+                    <button onclick="closeForm()">
+                        close
+                    </button>
+
+                    <p style="font-size: 12px; padding-top: 15px;">
+                        <i>
+                            demo form - no validations were done, and no info is captured.
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/.Popup-->
+
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20965.670353305482!2d28.08696673664114!3d-25.513968675215455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcf43441e6539%3A0x4e9266f675416d2c!2sSoshanguve%20-%20F%2C%20Soshanguve%2C%200152!5e0!3m2!1sen!2sza!4v1675452961173!5m2!1sen!2sza"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+        <p class="maptxt">
+            a map view of my town.
+        </p>
+
+
     </main>
     <!--/.Main-->
 
@@ -242,6 +173,18 @@
         <a href="about.html"><img src="./assets/Icons/coding.png" alt="" width="50"></a>
     </footer>
     <!--/.Footer-->
+
+    <script>
+        function openForm() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
 </body>
+
+
 
 </html>

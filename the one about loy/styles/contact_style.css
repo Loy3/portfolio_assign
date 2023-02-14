@@ -1,0 +1,308 @@
+body {
+    background-color: #f7f0d96c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Nav Bar*/
+nav {
+    margin: 0px 10px 0px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+nav td {
+    padding: 0;
+}
+
+nav a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #552f1a;
+    color: aliceblue;
+}
+
+nav a.active {
+    border-bottom: 2px solid #552f1a;
+}
+
+/*End of Nav Bar*/
+
+/*Header*/
+header {
+    background-image: url("../assets/Images/tv.png");
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+.bgText {
+    position: absolute;
+    color: white;
+    width: 60%;
+}
+
+.bgText p {
+    font-size: 14px;
+}
+
+.bgBlock {
+    width: 100%;
+    padding: 40px;
+    background-color: #2b180e;
+    opacity: 0.7;
+
+    text-align: center;
+    height: 68%;
+}
+
+/*End of Header*/
+
+/*Main*/
+main {
+    margin: 50px;
+    margin-top: 50px;
+}
+
+main h1,
+h2 {
+    color: #552f1a;
+}
+
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.column1 {
+    float: left;
+    width: 31%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 65%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+
+span,
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #552f1a;
+}
+
+.socials a {
+    text-decoration: none;
+    outline: none;
+    padding: 5px;
+}
+
+.socials img {
+    width: 25px;
+}
+
+.socials img:hover {
+    width: 30px;
+}
+
+.card {
+    background-color: #f7f0d91a;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 5px 10px 20px #552f1a71;
+    height: 85px;
+}
+
+#formBG {
+    background-color: #f7f0d91a;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 10px 20px #552f1a71;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    height: 35px;
+}
+
+input,
+textarea {
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+    font-size: 14px;
+    background-color: transparent;
+    color: #552f1ad7;
+    border: 2px solid #552f1ad7;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #552f1ad7;
+    border: 2px solid #552f1ad7;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #552f1ad7;
+    color: #f7f0d9;
+    border: 2px solid #552f1ad7;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+iframe {
+    margin-top: 80px;
+    border: 0;
+    border-radius: 0.2em;
+    width: 100%;
+    height: 300px;
+}
+
+.maptxt {
+    font-style: italic;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+
+
+.box {
+    background-color: #fcf9ee;
+    top: 25%;
+    width: 450px;
+    height: 250px;
+    position: fixed;
+    z-index: 99;
+    padding: 30px;
+}
+
+
+#popup {
+    display: none;
+    height: 90%;
+
+}
+
+.mypopup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 19, 19, 0.788);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.mypopup a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.mypopup a:hover {
+    color: #f1f1f1;
+}
+
+.mypopup .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*End of Main*/
+
+/*Footer*/
+footer {
+    background-color: #e2dcc7;
+    padding: 10px;
+    text-align: center;
+    color: #552f1a;
+}
+
+footer img {
+    width: 50px;
+    box-shadow: 5px 10px 20px #552f1a71;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10em;
+}
+
+footer img:hover {
+    width: 60px;
+}
+
+/*End of Footer*/
+
+/*Media*/
+@media screen and (max-width: 700px) {
+
+    .column1,
+    .column2 {
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    #formBG {
+        width: 90%;
+    }
+}
+
+/*End of Mdeia*/
