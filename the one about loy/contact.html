@@ -6,25 +6,14 @@
     <title>the one about loy</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <link rel="stylesheet" type="text/css" href="./styles/contact_style.css">
+
+    <script src="./js/contact_js.js"></script>
 </head>
 
 <body>
     <!--The navigation bar-->
     <nav id="myNav">
 
-        <table>
-            <tr>
-                <td>
-                    <img src="./assets/logo.png" alt="Logo" width="70" style="text-align:left;">
-                </td>
-
-                <td align="right" style="padding-right: 50px;">
-                    <a href="index.html" title="Home">home</a>
-                    <a href="about.html" title="About Me">about me</a>
-                    <a href="contact.html" class="active" title="Contact">contact</a>
-                </td>
-            </tr>
-        </table>
     </nav>
     <!--/.The navigation bar-->
 
@@ -32,17 +21,8 @@
     <header>
 
         <div class="bgBlock">
-
         </div>
-        <div class="bgText">
-            <h1><b>contact me</b></h1>
-            <p>
-                <b>
-                    "you might be alone at the moment, but someday, without any doubt, you'll definitely find nakama (a
-                    friend). no one is born into this world to be alone." - Jaguar D Saul
-                </b>
-            </p>
-
+        <div class="bgText" id="txt">
         </div>
 
     </header>
@@ -52,98 +32,67 @@
     <main>
 
         <div class="row">
-            <div class="column1">
-                <div class="card">
-                    <span>location:</span>
-                    <br>
-                    block f
-                    <br>
-                    soshanguve, 0152
-                </div>
-                <br>
-                <div class="card">
-                    <span>email: </span>
-                    <br>
-                    netshiozwiloy@gmail.com
-                </div>
-                <br>
-                <div class="card">
-                    <span>phone Number: </span>
-                    <br>
-                    +27 68 128 7854 || +27 76 850 7586
-                </div>
-                <br>
-                <div class="card">
-                    <span>socials</span>
-                    <br><br>
-                    <div class="socials">
-
-                        <a href="https://za.linkedin.com/in/loy-netshiozwi-94a591210" title="LinkedIn">
-                            <img src="./assets/Icons/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/Loy3" title="GitHub">
-                            <img src="./assets/Icons/github.png" alt="GitHub">
-                        </a>
-
-                    </div>
-                </div>
+            <!--Contact details-->
+            <div class="column1" id="firstCol">
             </div>
+            <!--/.Contact details-->
 
             <div class="column2">
                 <div id="formBG">
                     <h2>send a message:</h2>
-
-
-                    <table style="border-spacing: 15px; margin-top: 20px;">
-                        <tr>
-                            <td>
-                                <input type="text" placeholder="name" required>
-                            </td>
-                            <td>
-                                <input type="text" placeholder="surname" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="email" placeholder="email address" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <textarea name="" id="" rows="10" placeholder="message" required></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button onclick="openForm()">
-                                    submit
-                                </button>
-                            </td>
-                        </tr>
-                    </table>
+                    <form onsubmit="return myForm()">
+                        <table style="border-spacing: 15px; margin-top: 20px;">
+                            <tr>
+                                <td class="name" colspan="2">
+                                    <input type="text" id="fname" placeholder="first name" />
+                                    <input type="text" id="lname" placeholder="last name" />
+                                    <br>
+                                    <div id="name_validate">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="email" id="email" placeholder="Email" />
+                                    <br>
+                                    <div id="email_validate">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="text" id="subject" placeholder="subject" />
+                                    <br>
+                                    <div id="subject_validate">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                                    <br>
+                                    <div id="message_validate">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit">
+                                        submit
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
             </div>
         </div>
-        <!--Popup-->
+        <!--Popup  onclick="openForm()"-->
         <div id="popup">
             <div class="mypopup" onclick="closeForm()">
-                <div class="box">
-                    <h2>message</h2>
+                <div class="box" id="box">
+                    
 
-                    <p>
-                        message was sent successfully!
-                    </p>
-                    <br>
-
-                    <button onclick="closeForm()">
-                        close
-                    </button>
-
-                    <p style="font-size: 12px; padding-top: 15px;">
-                        <i>
-                            demo form - no validations were done, and no info is captured.
-                        </i>
-                    </p>
                 </div>
             </div>
         </div>
@@ -173,18 +122,10 @@
         <a href="about.html"><img src="./assets/Icons/coding.png" alt="" width="50"></a>
     </footer>
     <!--/.Footer-->
-
-    <script>
-        function openForm() {
-            document.getElementById("popup").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
 </body>
 
+<script>
 
+</script>
 
 </html>

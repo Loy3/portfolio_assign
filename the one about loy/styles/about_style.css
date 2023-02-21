@@ -1,11 +1,20 @@
 body {
-    background-color: #f7f0d96c;
+    background-color: #f7f0d9;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 /*Nav Bar*/
 nav {
-    margin: 0px 10px 0px 10px;
+    margin: 0;
+    background-color: #f7f0d9;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+    top: 0;
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 table {
@@ -46,7 +55,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px 0px 10px;
+    margin: 80px 10px 0px 10px;
 
     box-shadow: 5px 10px 20px #552f1a71;
 }
@@ -233,6 +242,67 @@ main span {
 .design video {
     width: 100%;
 
+}
+
+#webBull ul {
+    list-style: none;
+}
+
+#webBull li {
+    padding: 5px;
+}
+
+#webBull ul li::before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    background-image: url('../assets/Icons/coding.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+}
+
+#webBull ul .img0::before {
+
+    background-image: url('../assets/Icons/Ang.png');
+}
+
+#webBull ul .img1::before {
+
+    background-image: url('../assets/Icons/hcj.png');
+}
+
+#webBull ul .img2::before {
+
+    background-image: url('../assets/Icons/php.png');
+}
+
+#webBull ul .img3::before {
+
+    background-image: url('../assets/Icons/Ts.png');
+}
+
+
+
+#webBull ul .img4::before {
+
+    background-image: url('../assets/Icons/Ae.png');
+}
+
+#webBull ul .img5::before {
+
+    background-image: url('../assets/Icons/Ps.png');
+}
+
+#webBull ul .img6::before {
+
+    background-image: url('../assets/Icons/max.png');
+}
+
+#webBull ul .img7::before {
+
+    background-image: url('../assets/Icons/Unity.png');
 }
 
 /*End of Skills*/

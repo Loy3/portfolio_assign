@@ -1,12 +1,22 @@
 body {
-    background-color: #f7f0d96c;
+    background-color: #f7f0d9;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
+
+    margin: 0;
 }
 
 /*Nav Bar*/
 nav {
-    margin: 0px 10px 0px 10px;
+    margin: 0;
+    background-color: #f7f0d9;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+    top: 0;
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 table {
@@ -38,7 +48,7 @@ nav a.active {
 /*Header*/
 header {
     height: 80vh;
-    margin: 0px 10px 0px 10px;
+    margin: 80px 10px 0px 10px;
 }
 
 
@@ -177,7 +187,6 @@ iframe {
 }
 
 /*End of Footer*/
-
 
 /*Media*/
 @media screen and (max-width: 700px) {

@@ -6,48 +6,26 @@
     <title>the one about loy</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <link rel="stylesheet" type="text/css" href="./styles/index_style.css">
-
+    <script src="./js/index_js.js"></script>
 </head>
 
-<body>
+<body id="top">
 
     <!--The navigation bar-->
     <nav id="myNav">
-
-        <table>
-            <tr>
-                <td>
-                    <img src="./assets/logo.png" alt="Logo" width="70" style="text-align:left;">
-                </td>
-
-                <td align="right" style="padding-right: 50px;">
-                    <a href="#" class="active">home</a>
-                    <a href="about.html" title="About Me">about me</a>
-                    <a href="contact.html" title="Contact">contact</a>
-                </td>
-            </tr>
-        </table>
     </nav>
     <!--/.The navigation bar-->
 
     <!--The header-->
-    <header>
-        <video autoplay="autoplay" loop="true" muted>
-            <source src="./assets/Video/pexels-koolshooters-9724311.mp4" type="video/mp4">
+    <header id="myHeader">
+        <video autoplay='autoplay' loop='true' muted>
+            <source src='./assets/Video/pexels-koolshooters-9724311.mp4' type='video/mp4'>
         </video>
 
-        <div class="bgBlock">
-
+        <!--text-->
+        <div class='bgText' id="txt">
         </div>
-        <div class="bgText">
-            <h2><b>the one about loy</b></h2>
-            <p>
-                <b>
-                    video by koolshooter, downloaded from pexels.com
-                </b>
-            </p>
-
-        </div>
+        <!--/.text-->
     </header>
     <!--/.The header-->
 
@@ -55,26 +33,15 @@
     <main>
         <br>
         <div class="row">
-            <div class="column1">
-                <a href="about.html"><img src="./assets/Images/Loy.png" alt="Loy"></a>
+            <!--Image-->
+            <div class="column1" id="firstCol">
             </div>
-            <div class="column2">
-                <h1>loy netshiozwi</h1>
-                <p>
-                    <span>my bio - </span> loy is a multimedia designer who has a great passion in web development,
-                    and graphic/digital design.
-                    <br>
-                    <br>
-                    personally he's a person who works hard and is enthused, motivated, dependable, and responsible.
-                    he's someone who can easily adjust to any difficult circumstances. he has the ability to operate
-                    well both independently and in a collaborative setting.
-                </p>
-                <a href="about.html">
-                    <button>
-                        read more
-                    </button>
-                </a>
+            <!--/.Image-->
+
+            <!--text-->
+            <div class="column2" id="secondCol">
             </div>
+            <!--/.text-->
         </div>
     </main>
     <!--/.The main content-->
@@ -82,43 +49,20 @@
     <!--The footer-->
     <footer>
         <div class="row">
-            <div class="column">
-                <br><br>
-                <p>
-                    <span>phone number: </span>
-                    <br>
-                    +27 68 128 7854 || +27 76 850 7586
-                </p>
-
-                <div class="socials" style="margin-top: 30px;">
-                    <h3>socials</h3>
-
-                    <a href="https://za.linkedin.com/in/loy-netshiozwi-94a591210" title="LinkedIn">
-                        <img src="./assets/Icons/linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com/Loy3" title="GitHub">
-                        <img src="./assets/Icons/github.png" alt="GitHub">
-                    </a>
-
-                </div>
-
+            <!--Contect info-->
+            <div class="column" id="footCol1">
             </div>
-            <div class="column">
+            <!--/.Contect info-->
+
+            <!--Map-->
+            <div class="column" id="footCol2">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20965.670353305482!2d28.08696673664114!3d-25.513968675215455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcf43441e6539%3A0x4e9266f675416d2c!2sSoshanguve%20-%20F%2C%20Soshanguve%2C%200152!5e0!3m2!1sen!2sza!4v1675452961173!5m2!1sen!2sza"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57612.40403625084!2d28.098724!3d-25.512541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcf43441e6539%3A0x4e9266f675416d2c!2sSoshanguve%20-%20F%2C%20Soshanguve%2C%200152!5e0!3m2!1sen!2sza!4v1676971981574!5m2!1sen!2sza"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+            <!--/.Map-->
         </div>
-
-        <table>
-            <td style="width: 50%; padding-left: 50px;">
-            </td>
-
-            <td>
-
-            </td>
-        </table>
-
     </footer>
     <!--The footer-->
 

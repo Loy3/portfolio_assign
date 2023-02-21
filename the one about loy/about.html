@@ -7,39 +7,27 @@
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <link rel="stylesheet" type="text/css" href="./styles/about_style.css">
 
+    <script src="./js/about_js.js"></script>
+
 </head>
 
 <body>
     <!--The navigation bar-->
     <nav id="myNav">
-
-        <table>
-            <tr>
-                <td>
-                    <img src="./assets/logo.png" alt="Logo" width="70" style="text-align:left;">
-                </td>
-
-                <td align="right" style="padding-right: 50px;">
-                    <a href="index.html" title="Home">home</a>
-                    <a href="about.html" class="active" title="About Me">about me</a>
-                    <a href="contact.html" title="Contact">contact</a>
-                </td>
-            </tr>
-        </table>
     </nav>
     <!--/.The navigation bar-->
 
     <!--The header-->
     <header>
-
+        <!--bg colour-->
         <div class="bgBlock">
-
         </div>
-        <div class="bgText">
-            <h1><b>about me</b></h1>
-            <h3><b>the one about loy </b></h3>
+        <!--/.bg colour-->
 
+        <!--text-->
+        <div class="bgText" id="txt">
         </div>
+        <!--/.text-->
 
     </header>
     <!--/.The header-->
@@ -47,94 +35,30 @@
     <main>
         <!--Personal Info-->
         <div id="container">
-            <h1>about</h1>
-            <p>
-                loy was born and raised in soshanguve, pretoria, by a single mother with 6 children and he was the
-                sixth child (last born). after he finishing matric, he chose to further his studies, by studying to
-                become a multimedia designer, and during his studies, he grew to have a passion for web development and
-                digital design, and ever since he has been working hard to improve his skills.
-            </p>
 
+            <!--Title & intro-->
+            <div id="intro">
+            </div>
+            <!--/.Title & intro-->
+
+            <!--Details-->
             <div class="detTb">
                 <div class="row">
-                    <div class="column1">
-                        <img src="./assets/Images/bike.png" alt="Loy" width="100%" class="detImg">
+                    <!--First Column-->
+                    <div class="column1" id="firstCol">
+                        <table style="width: 100%;" class="web" id="table_data1">
+
+                        </table>
                     </div>
-                    <div class="column2">
-                        <h3>multimedia Designer || web developer || digital designer</h3>
+                    <!--/.First Column-->
 
-                        <!--<p>
-                            loy is a multimedia designer who has a great passion in web development,
-                            and graphic/digital design
-                        </p>-->
-                        <br>
-                        <div class="row">
-                            <div class="column">
-                                <span>full name(s): </span>
-                                <br>
-                                loy shandukani netshiozwi
-                            </div>
-                            <div class="column">
-                                <span> age: </span>25
-
-                            </div>
-
-                            <div class="column">
-                                <span>phone number:</span>
-                                <br>
-                                +27 68 128 7854
-                                || +27 76 850 7586
-                            </div>
-                            <div class="column">
-                                <span>email:</span> netshiozwiloy@gmail.com
-
-                            </div>
-
-                            <div class="column">
-                                <span>website: </span><a href="https://portfolio-63e6b.web.app/">portfolio</a>
-                            </div>
-                            <div class="column">
-                                <span>city:</span> tshwane
-                            </div>
-
-                            <div class="longColumn">
-                                <h3>
-                                    hobbies:
-                                </h3>
-                            </div>
-                            <div class="longColumn">
-                                <table style="width: 100%;">
-                                    <tr class="hobb">
-
-                                        <td style="width: 10%;">
-                                            <img src="./assets/Icons/bodybuilder.png" alt="">
-                                            <br>
-                                            <span>body building</span>
-                                        </td>
-                                        <td style="width: 10%;">
-                                            <img src="./assets/Icons/martial-arts.png" alt="">
-                                            <br>
-                                            <span>kyokushin karate</span>
-                                        </td>
-                                        <td style="width: 10%;">
-                                            <img src="./assets/Icons/sewing-machine.png" alt="">
-                                            <br>
-                                            <span>sewing</span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="longColumn">
-                                <p>
-                                    these are some of the things he enjoy's doing if he's not coding or designing,
-                                    and if he's not doing either of these things, he's either watching anime or
-                                    collecting hot wheels.
-                                </p>
-                            </div>
-                        </div>
+                    <!--Second Column-->
+                    <div class="column2" id="secondCol">
                     </div>
+                    <!--/.Second Column-->
                 </div>
             </div>
+            <!--/.Details-->
         </div>
         <!--/.Personal Info-->
 
@@ -145,88 +69,16 @@
                 <h1>
                     skills:
                 </h1>
-
+                <div class="column"></div>
                 <div class="column" id="skill">
-                    <img src="./assets/Icons/coding.png" alt="" class="mImg">
-                    <h3>
-                        for web development:
-                    </h3>
-
-                    <table style="width: 100%;" class="web">
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/Ang.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                angular 2+
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/hcj.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                html || css/scss || javascript
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/php.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                php
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/Ts.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                typescript
-                            </td>
-                        </tr>
-                    </table>
+                    <div id="webSkill">
+                    </div>
                 </div>
 
                 <div class="column" id="skill">
-                    <img src="./assets/Icons/graphic-design.png" alt="" class="mImg">
-                    <h3>for design</h3>
 
-                    <table style="width: 100%;" class="web">
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/Ae.png" alt="" width="10" class="sImg">
-                            </td>
-                            <td style="width: 95%;">
-                                adobe after effects
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/Ps.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                adobe photoshop
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/max.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                autodesk 3ds max
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 5%;">
-                                <img src="./assets/Icons/Unity.png" alt="" width="10">
-                            </td>
-                            <td style="width: 95%;">
-                                unity
-                            </td>
-                        </tr>
-                    </table>
-
+                    <div id="desSkill">
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,115 +86,20 @@
 
         <!--Resume-->
         <div id="container">
-            <h1>resume</h1>
+
 
             <div id="resume">
+                <h1>resume</h1>
                 <table>
                     <tr>
                         <td class="tbDetails">
                             <!--Education-->
-                            <div id="education">
-                                <div class="row">
-                                    <div class="longColumn">
-                                        <h2>education</h2>
-                                    </div>
-                                    <div class="column">
-                                        <h4>national diploma in IT multimedia:</h4>
-                                        <p>
-                                            tshwane university of technology
-                                            <br>
-                                            pretoria, soshanguve south campus.
-                                            <br>
-                                            2017 - 2021
-                                        </p>
-                                    </div>
-
-                                    <div class="column">
-                                        <h4>system development nq level 5:</h4>
-                                        <p>
-                                            tsafrika foundation learnership
-                                            <br>
-                                            kya sands, radnburg.
-                                            <br>
-                                            2021 - 2022
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="row" id="education">
                             </div>
                             <!--/.Education-->
 
                             <!--Experience-->
-                            <div id="experience">
-                                <div class="row">
-                                    <div class="longColumn">
-                                        <h2>work experience</h2>
-                                    </div>
-                                    <div class="column">
-                                        <div id="firstexp">
-                                            <h4 class="mb-3">Information Community Engagement Project (ICEP)</h4>
-                                            <p>
-                                                front-end developer || 2020 - 2021.
-                                                <br>
-                                                I was an intern at ICEP working as a front-end developer working hand
-                                                in hand with back-end developers and business analysts.
-                                                <br>
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    developer in a 10 member team, which consisted of a scrum master,
-                                                    back-end
-                                                    developers and
-                                                    business analysts
-                                                </li>
-                                                <li>
-                                                    developed web application, e-commerce web application.
-                                                </li>
-                                                <li>
-                                                    using angular, scss, and typeScript to develop the web
-                                                    applications.
-                                                </li>
-                                                <li>
-                                                    Connecting APIs on Angular.
-                                                </li>
-                                            </ul>
-                                            <br>
-                                            <button onclick="next()">
-                                                next
-                                            </button>
-                                        </div>
-
-                                        <div id="secondexp">
-                                            <h4 class="mb-3">Bodibeng Community Library</h4>
-                                            <p>
-                                                librarian || 2022 - 2022.
-                                                <br>
-                                                I was an intern librarian at Bodibeng, helping customers locate book,
-                                                finding
-                                                material
-                                                online, checking books in and out at the front desk, sorting and
-                                                shelving
-                                                books
-                                                according to their categorization, registering new customers and
-                                                maintaining
-                                                and
-                                                updating customer profile, assisting customers with internet access and
-                                                ensuring
-                                                their
-                                                technical needs are met.
-                                                <br><br>
-                                                As part of the learneship, my system development duties was to develop
-                                                web
-                                                application,using angular, html5, CSS, and PHP to develop the web
-                                                applications.
-                                            </p>
-                                            <br>
-                                            <button onclick="prev()">
-                                                prev.
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="row" id="experience">
                             </div>
                             <!--Experience-->
                         </td>
@@ -350,9 +107,6 @@
                         <td class="tdImg">
                             <div class="sideImg "></div>
                         </td>
-                    </tr>
-                    <tr>
-
                     </tr>
                 </table>
             </div>
@@ -368,67 +122,27 @@
                     <div class="column">
                         <div class="spec">
                             <img src="./assets/Icons/coding.png" alt="">
-                            <h3>
-                                web development:
-                            </h3>
-
-                            <ul>
-                                <li>
-                                    creating PHP REST APIs
-                                </li>
-                                <li>
-                                    developing websites and web application
-                                </li>
-                                <li>
-                                    firebase API connecting
-                                </li>
-                                <li>
-                                    firebase website hosting
-                                </li>
-                            </ul>
-                            <br><br><br>
-
+                            <div id="spec1">
+                            </div>
                         </div>
                     </div>
 
                     <div class="column">
                         <div class="spec">
                             <img src="./assets/Icons/graphic-design.png" alt="">
-                            <h3>
-                                design:
-                            </h3>
-                            <ul>
-                                <li>
-                                    designing 2d characters using photoshop
-                                </li>
-                                <li>
-                                    different types of posters designs using photoshop
-                                </li>
-                                <li>
-                                    mixtape cover art designing using photoshop
-                                </li>
-                                <li>
-                                    Video Editing using After Effects.
-                                </li>
-                            </ul>
+
+                            <div id="spec2">
+
+                            </div>
                         </div>
                     </div>
 
                     <div class="column">
                         <div class="spec">
                             <img src="./assets/Icons/port.png" alt="">
-                            <h3>
-                                ui/ux development:
-                            </h3>
-                            <ul>
-                                <li>
-                                    designing ui
-                                </li>
-                                <li>
-                                    implementing them in angular
-                                </li>
-                            </ul>
-                            <br><br><br><br>
+                            <div id="spec3">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -441,22 +155,8 @@
             <div id="container">
                 <h1>designs</h1>
 
-                <div class="row" style="margin-top: 50px;">
-                    <div class="column">
-                        <img src="./assets/Images/Char/7.png" alt="Design">
-                        <br>
-                        uncle loy
-                    </div>
-                    <div class="column">
-                        <img src="./assets/Images/Poster/2.png" alt="Design">
-                        chillas sunday
-                    </div>
-                    <div class="column">
-                        <img src="./assets/Images/Cover/20.png" alt="Design">
-                        mixtape cover art
-                    </div>
+                <div id="aFew">
                 </div>
-
                 <a href="portfolio.html">
                     <button> see more</button>
                 </a>
@@ -468,26 +168,12 @@
 
     <!--Footer-->
     <footer>
-
-
         <h4>
             developed by loy
         </h4>
         <a href="contact.html"><img src="./assets/Icons/coding.png" alt="" width="50"></a>
     </footer>
     <!--/.Footer-->
-
-    <script>
-        function next() {
-            document.getElementById("firstexp").style.display = "none";
-            document.getElementById("secondexp").style.display = "block";
-        }
-
-        function prev() {
-            document.getElementById("firstexp").style.display = "block";
-            document.getElementById("secondexp").style.display = "none";
-        }
-    </script>
 
 </body>
 
