@@ -128,6 +128,7 @@ function validate_email(mail) {
         return true;
     }
     else {
+        document.getElementById("email_validate").innerHTML = vldEmail;
         return false;
     }
 }
