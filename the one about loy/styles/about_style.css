@@ -513,7 +513,10 @@ footer img:hover {
 
 /*Media*/
 @media screen and (max-width: 700px) {
+    nav a {
 
+        font-size: 12px;
+    }
     .column1,
     .column2,
     .column2 .column,
@@ -558,5 +561,9 @@ footer img:hover {
     #firstexp {
 
         padding: 0px;
+    }
+
+    #container {
+        margin: 30px;
     }
 }

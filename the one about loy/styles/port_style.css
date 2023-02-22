@@ -51,6 +51,12 @@ header {
     height: 58%;
 }
 
+header h3 {
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+}
+
 /*End of Header*/
 
 /*Main*/
@@ -60,7 +66,7 @@ header {
     color: #552f1a;
 }
 
-h3{
+h3 {
     text-align: right;
     margin-right: 50px;
     color: #552f1a;
@@ -91,7 +97,9 @@ h3{
     display: none;
 }
 
-#cover img, #char img, #poster img{
+#cover img,
+#char img,
+#poster img {
     cursor: pointer;
 }
 
@@ -121,7 +129,7 @@ h3{
 
 #type input {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-right: 20px;
     width: 100px;
     height: 30px;
     font-size: 16px;
@@ -263,6 +271,7 @@ footer img:hover {
     border: none;
     outline: none;
 }
+
 /*end of popup*/
 
 /*Medea*/
@@ -279,8 +288,29 @@ footer img:hover {
         height: 450px;
     }
 
-    #viewImage{
+    #viewImage {
         width: 90%;
     }
+
+    #type input {
+        margin-right: 10px;
+        width: 80px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    #websites .card {
+        height: 400px;
+        
+    }
+
+    #designs,
+.container,
+#websites {
+    margin: 20px;
+    margin-right: 30px;
 }
+}
+
+
 /*end of Medea*/

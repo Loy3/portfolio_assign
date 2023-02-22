@@ -315,6 +315,15 @@ footer img:hover {
 /*Media*/
 @media screen and (max-width: 700px) {
 
+    nav a {
+
+        font-size: 12px;
+    }
+
+    .bgText p {
+        font-size: 11px;
+    }
+
     .column1,
     .column2 {
         width: 100%;
@@ -326,6 +335,16 @@ footer img:hover {
 
     #formBG {
         width: 90%;
+    }
+    
+    main {
+        margin: 30px;
+        padding-right: 30px;
+    }
+
+    .name input {
+        width: 96.5%;
+        margin-top: 20px;
     }
 }
 

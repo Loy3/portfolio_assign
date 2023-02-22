@@ -4,6 +4,7 @@ body {
         Geneva, Verdana, sans-serif;
 
     margin: 0;
+    padding: 0;
 }
 
 /*Nav Bar*/
@@ -189,11 +190,31 @@ iframe {
 /*End of Footer*/
 
 /*Media*/
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+    nav a {
+
+        font-size: 12px;
+    }
+
+    header {
+        margin: 80px 10px 0px 0px;
+    }
+
+    .bgText {
+      
+        left: 40%;
+    }
+    
+   
 
     .column1,
     .column2 {
         width: 100%;
+    }
+    
+
+    .column2 {
+        padding-left: 0;
     }
 
     main img {
@@ -207,7 +228,11 @@ iframe {
     }
 
     iframe {
-        width: 400px;
+        width: 300px;
+    }
+
+   footer .column {
+        width: 100%;
     }
 }
 
